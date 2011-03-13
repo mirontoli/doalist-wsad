@@ -1,0 +1,27 @@
+#java specific
+*.class
+## generic files to ignore
+*~
+.lock
+.DS_Store
+*.swp
+*.out
+Thumbs.db
+Desktop.ini
+
+## Eclipse (wsad) ignore:https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+*.jar
