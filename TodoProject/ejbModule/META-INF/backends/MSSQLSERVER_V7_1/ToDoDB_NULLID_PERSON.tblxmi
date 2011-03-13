@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PERSON" name="PERSON" primaryKey="PK_PERSON">
+  <database href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB.dbxmi#ToDoDB"/>
+  <schema href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USERNAME" name="USERNAME">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710549" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PASSWORD" name="PASSWORD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710550" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FIRSTNAME" name="FIRSTNAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710551" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LASTNAME" name="LASTNAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710552" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMAILADDRESS" name="EMAILADDRESS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710553" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_PERSON" name="PK_PERSON" members="USERNAME" constraint="SQLConstraint_1270044710549">
+    <referenceByKey href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#C1150284"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1270044710549" name="PK_PERSON" type="PRIMARYKEY" primaryKey="PK_PERSON"/>
+</RDBSchema:RDBTable>

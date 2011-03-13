@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>TodoProject</display-name>
+	<enterprise-beans>
+		<entity id="Todo">
+			<ejb-name>Todo</ejb-name>
+			<local-home>todobeans.TodoLocalHome</local-home>
+			<local>todobeans.TodoLocal</local>
+			<ejb-class>todobeans.TodoBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>todobeans.TodoKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Todo</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1270044710487">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710502">
+				<field-name>todoName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710503">
+				<field-name>startTime</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710504">
+				<field-name>endTime</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710505">
+				<field-name>comment</field-name>
+			</cmp-field>
+			<ejb-local-ref id="EJBLocalRef_1270044234018">
+				<ejb-ref-name>ejb/Person</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.PersonLocalHome</local-home>
+				<local>todobeans.PersonLocal</local>
+				<ejb-link>Person</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1270044710471">
+				<ejb-ref-name>ejb/Category</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.CategoryLocalHome</local-home>
+				<local>todobeans.CategoryLocal</local>
+				<ejb-link>Category</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1270032656549">
+				<description></description>
+				<res-ref-name>mycon</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+			<query>
+				<description></description>
+				<query-method>
+					<method-name>findTodoLocalWithMaxId</method-name>
+					<method-params>
+					</method-params>
+				</query-method>
+				<ejb-ql>select object(o) from Todo o where o.id  = (select max(o.id) from Todo o)</ejb-ql>
+			</query>
+		</entity>
+		<entity id="Category">
+			<ejb-name>Category</ejb-name>
+			<local-home>todobeans.CategoryLocalHome</local-home>
+			<local>todobeans.CategoryLocal</local>
+			<ejb-class>todobeans.CategoryBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>todobeans.CategoryKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Category</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1270044710518">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710519">
+				<field-name>categoryName</field-name>
+			</cmp-field>
+			<ejb-local-ref id="EJBLocalRef_1270044710472">
+				<ejb-ref-name>ejb/Todo</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.TodoLocalHome</local-home>
+				<local>todobeans.TodoLocal</local>
+				<ejb-link>Todo</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1270032664346">
+				<description></description>
+				<res-ref-name>mycon</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+			<query>
+				<description></description>
+				<query-method>
+					<method-name>findAll</method-name>
+					<method-params>
+					</method-params>
+				</query-method>
+				<ejb-ql>select object(o) from Category o</ejb-ql>
+			</query>
+		</entity>
+		<entity id="Person">
+			<ejb-name>Person</ejb-name>
+			<local-home>todobeans.PersonLocalHome</local-home>
+			<local>todobeans.PersonLocal</local>
+			<ejb-class>todobeans.PersonBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Person</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1270044710520">
+				<field-name>userName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710534">
+				<field-name>password</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710535">
+				<field-name>firstName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710536">
+				<field-name>lastName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1270044710537">
+				<field-name>emailAddress</field-name>
+			</cmp-field>
+			<primkey-field>userName</primkey-field>
+			<ejb-local-ref id="EJBLocalRef_1270044234019">
+				<ejb-ref-name>ejb/Todo</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.TodoLocalHome</local-home>
+				<local>todobeans.TodoLocal</local>
+				<ejb-link>Todo</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1270032660299">
+				<description></description>
+				<res-ref-name>mycon</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+		<session id="Facade">
+			<ejb-name>Facade</ejb-name>
+			<home>todobeans.FacadeHome</home>
+			<remote>todobeans.Facade</remote>
+			<ejb-class>todobeans.FacadeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1270072428812">
+				<ejb-ref-name>ejbPersonRef</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.PersonLocalHome</local-home>
+				<local>todobeans.PersonLocal</local>
+				<ejb-link>Person</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1270468532765">
+				<ejb-ref-name>ejbTodoRef</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.TodoLocalHome</local-home>
+				<local>todobeans.TodoLocal</local>
+				<ejb-link>Todo</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1270468532766">
+				<ejb-ref-name>ejbCategoryRef</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>todobeans.CategoryLocalHome</local-home>
+				<local>todobeans.CategoryLocal</local>
+				<ejb-link>Category</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<relationships>
+		<ejb-relation>
+			<description></description>
+			<ejb-relation-name>Todo-Person</ejb-relation-name>
+			<ejb-relationship-role id="EJBRelationshipRole_1270044710518">
+				<ejb-relationship-role-name>person</ejb-relationship-role-name>
+				<multiplicity>Many</multiplicity>
+				<cascade-delete />
+				<relationship-role-source>
+					<ejb-name>Todo</ejb-name>
+				</relationship-role-source>
+				<cmr-field>
+					<cmr-field-name>person</cmr-field-name>
+				</cmr-field>
+			</ejb-relationship-role>
+			<ejb-relationship-role id="EJBRelationshipRole_1270044710519">
+				<ejb-relationship-role-name>todo</ejb-relationship-role-name>
+				<multiplicity>One</multiplicity>
+				<relationship-role-source>
+					<ejb-name>Person</ejb-name>
+				</relationship-role-source>
+				<cmr-field>
+					<cmr-field-name>todo</cmr-field-name>
+					<cmr-field-type>java.util.Collection</cmr-field-type>
+				</cmr-field>
+			</ejb-relationship-role>
+		</ejb-relation>
+		<ejb-relation>
+			<description></description>
+			<ejb-relation-name>Todo-Category</ejb-relation-name>
+			<ejb-relationship-role id="EJBRelationshipRole_1270044710520">
+				<ejb-relationship-role-name>category</ejb-relationship-role-name>
+				<multiplicity>Many</multiplicity>
+				<cascade-delete />
+				<relationship-role-source>
+					<ejb-name>Todo</ejb-name>
+				</relationship-role-source>
+				<cmr-field>
+					<cmr-field-name>category</cmr-field-name>
+				</cmr-field>
+			</ejb-relationship-role>
+			<ejb-relationship-role id="EJBRelationshipRole_1270044710521">
+				<ejb-relationship-role-name>todo</ejb-relationship-role-name>
+				<multiplicity>One</multiplicity>
+				<relationship-role-source>
+					<ejb-name>Category</ejb-name>
+				</relationship-role-source>
+				<cmr-field>
+					<cmr-field-name>todo</cmr-field-name>
+					<cmr-field-type>java.util.Collection</cmr-field-type>
+				</cmr-field>
+			</ejb-relationship-role>
+		</ejb-relation>
+	</relationships>
+</ejb-jar>

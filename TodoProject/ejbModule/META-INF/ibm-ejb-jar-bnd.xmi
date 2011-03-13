@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmlns:common="common.xmi" xmi:id="EJBJarBinding_1270028267424" currentBackendId="MSSQLSERVER_V7_1">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1270028267424" jndiName="ejb/todobeans/TodoLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Todo"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1270032656549" jndiName="jdbc/ToDoDataSource">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1270032656549"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270044234018" jndiName="ejb/todobeans/PersonLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270044234018"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270044710471" jndiName="ejb/todobeans/CategoryLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270044710471"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1270028354127" jndiName="ejb/todobeans/CategoryLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Category"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1270032664346" jndiName="jdbc/ToDoDataSource">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1270032664346"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270044710472" jndiName="ejb/todobeans/TodoLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270044710472"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1270028545158" jndiName="ejb/todobeans/PersonLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Person"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1270032660299" jndiName="jdbc/ToDoDataSource">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1270032660299"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270044234019" jndiName="ejb/todobeans/TodoLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270044234019"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1270046268284" jndiName="ejb/todobeans/FacadeHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Facade"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270072428812" jndiName="ejb/todobeans/PersonLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270072428812"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270468532765" jndiName="ejb/todobeans/TodoLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270468532765"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1270468532766" jndiName="ejb/todobeans/CategoryLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1270468532766"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1270028267424" jndiName="jdbc/ToDoDataSource" resAuth="Container"/>
+</ejbbnd:EJBJarBinding>

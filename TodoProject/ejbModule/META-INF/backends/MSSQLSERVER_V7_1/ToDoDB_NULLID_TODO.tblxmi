@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TODO" name="TODO" primaryKey="PK_TODO">
+  <database href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB.dbxmi#ToDoDB"/>
+  <schema href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1270044710534">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="MSSQLSERVER_V7_Primitives.xmi#SQLExactNumeric_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TODONAME" name="TODONAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710549" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STARTTIME" name="STARTTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1270044710549" precision="3">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="MSSQLSERVER_V7_Primitives.xmi#SQLTimestamp_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ENDTIME" name="ENDTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1270044710550" precision="3">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="MSSQLSERVER_V7_Primitives.xmi#SQLTimestamp_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT1" name="COMMENT1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710550" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERSON_USERNAME" name="PERSON_USERNAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710551" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATEGORY_ID" name="CATEGORY_ID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1270044710549">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="MSSQLSERVER_V7_Primitives.xmi#SQLExactNumeric_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_TODO" name="PK_TODO" members="ID" constraint="SQLConstraint_1270044710549"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="C1150284" name="C1150284" members="PERSON_USERNAME" constraint="SQLConstraint_1270044710550">
+    <target href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#PK_PERSON"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="C1150284_1" name="C1150284" members="CATEGORY_ID" constraint="SQLConstraint_1270044710551">
+    <target href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#PK_CATEGORY"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1270044710549" name="PK_TODO" type="PRIMARYKEY" primaryKey="PK_TODO"/>
+  <constraints xmi:id="SQLConstraint_1270044710550" name="C1150284" type="FOREIGNKEY" referenceByKey="C1150284"/>
+  <constraints xmi:id="SQLConstraint_1270044710551" name="C1150284" type="FOREIGNKEY" referenceByKey="C1150284_1"/>
+</RDBSchema:RDBTable>

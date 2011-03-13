@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CATEGORY" name="CATEGORY" primaryKey="PK_CATEGORY">
+  <database href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB.dbxmi#ToDoDB"/>
+  <schema href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1270044710549">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="MSSQLSERVER_V7_Primitives.xmi#SQLExactNumeric_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATEGORYNAME" name="CATEGORYNAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1270044710549" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_CATEGORY" name="PK_CATEGORY" members="ID" constraint="SQLConstraint_1270044710549">
+    <referenceByKey href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#C1150284_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1270044710549" name="PK_CATEGORY" type="PRIMARYKEY" primaryKey="PK_CATEGORY"/>
+</RDBSchema:RDBTable>

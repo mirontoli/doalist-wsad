@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ToDoDB" name="ToDoDB">
+  <schemata href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID.schxmi#NULLID"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#TODO"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#CATEGORY"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#PERSON"/>
+  <domain href="MSSQLSERVER_V7_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1270044710487" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1270044710487" primitivesDocument="MSSQLSERVER_V7"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1270044710487">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1270044710487">
+      <table href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#TODO"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710487">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710487"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#ID"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710502">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710502"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#TODONAME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710503">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710503"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#STARTTIME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#Timestamp-TIMESTAMP"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710504">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710504"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#ENDTIME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#Timestamp-TIMESTAMP"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710505">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710505"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#COMMENT1"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710518">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_1270044710518"/>
+      <inputs xmi:type="ejb:EJBRelationshipRole" href="META-INF/ejb-jar.xml#EJBRelationshipRole_1270044710518"/>
+      <inputs xmi:type="ejb:EJBRelationshipRole" href="META-INF/ejb-jar.xml#EJBRelationshipRole_1270044710519"/>
+      <outputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#C1150284"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710519">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_1270044710519"/>
+      <inputs xmi:type="ejb:EJBRelationshipRole" href="META-INF/ejb-jar.xml#EJBRelationshipRole_1270044710520"/>
+      <inputs xmi:type="ejb:EJBRelationshipRole" href="META-INF/ejb-jar.xml#EJBRelationshipRole_1270044710521"/>
+      <outputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#C1150284_1"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Todo"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_TODO.tblxmi#TODO"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1270044710518">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1270044710518">
+      <table href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#CATEGORY"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710520">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710518"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#ID"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710521">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710519"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#CATEGORYNAME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Category"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_CATEGORY.tblxmi#CATEGORY"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1270044710519">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1270044710519">
+      <table href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#PERSON"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710522">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710520"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#USERNAME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710534">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710534"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#PASSWORD"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710535">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710535"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#FIRSTNAME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710536">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710536"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#LASTNAME"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1270044710537">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1270044710537"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#EMAILADDRESS"/>
+      <typeMapping href="JavatoMSSQLSERVER_V7TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Person"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB_NULLID_PERSON.tblxmi#PERSON"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/backends/MSSQLSERVER_V7_1/ToDoDB.dbxmi#ToDoDB"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoMSSQLSERVER_V7TypeMaps.xmi#Java_to_MSSQLSERVER_V7_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>
