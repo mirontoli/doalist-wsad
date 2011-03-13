@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1270025812205">
+  <mappings xmi:id="ModuleMapping_1270025812205" projectName="TodoProject">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1270025812205"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1270068772562" projectName="TestTodoProject_JUnitEE">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1270068772562"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1270196636015" projectName="TodoWeb">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1270196636015"/>
+  </mappings>
+</modulemap:EARProjectMap>
