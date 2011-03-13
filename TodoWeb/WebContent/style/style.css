@@ -1,0 +1,89 @@
+/* 
+    Document   : style
+    Created on : 2010-mar-24, 11:27:58
+    Author     : Anatoly
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+h1 {
+	text-align: center;
+	font-family: 'Century Gothic', Helvetica, sans-serif;
+	font-size: 3em !important;
+	color: #336699;
+	width: 100%;
+	white-space: nowrap;
+}
+div.subtitle {
+	color:white;
+	font-size:1.2em;
+}
+#leftmenu {
+	width:100px;
+	min-height:200px;
+	float:left;
+}
+#container {
+	margin:20px;
+}
+#errorMessage {
+	color:red;
+	font-weight:bold;
+	margin-bottom:40px;
+}
+#login {
+	text-align: center;
+	margin-top:60px;
+}
+#extras {
+	font-size:0.9em;
+}
+
+.button {
+	height: 25px;
+	min-width: 100px
+}
+
+.timeInput {
+	width: 100px;
+}
+
+.dateInput {
+	width: 100px;
+}
+
+.cat {
+	width: 100px;
+}
+
+.prio {
+	width: 100px;
+}
+
+/* text input textarea */
+.text {
+	width: 364px;
+}
+
+/* jquery validate plugin */
+label.error {
+	float: none;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+}
+
+table#todolist {
+	border-collapse: collapse
+}
+
+table#todolist th {
+	border: 2px solid gray;
+	width: 200px;
+}
+table#todolist .odd {
+	background-color:#99CCFF;
+}
