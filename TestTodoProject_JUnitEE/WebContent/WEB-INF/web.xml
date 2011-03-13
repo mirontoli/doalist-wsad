@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp">
+	<display-name>TestTodoProject_JUnitEE</display-name>
+	<servlet>
+		<servlet-name>JUnitEEServlet</servlet-name>
+		<display-name>JUnitEEServlet</display-name>
+		<servlet-class>org.junitee.servlet.JUnitEEServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JUnitEEServlet</servlet-name>
+		<url-pattern>/JUnitEEServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<ejb-local-ref id="EJBLocalRef_1270070269875">
+		<ejb-ref-name>ejb/TodoRef</ejb-ref-name>
+		<ejb-ref-type>Entity</ejb-ref-type>
+		<local-home>todobeans.TodoLocalHome</local-home>
+		<local>todobeans.TodoLocal</local>
+		<ejb-link>TodoProject.jar#Todo</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1270716318375">
+		<ejb-ref-name>ejb/PersonRef</ejb-ref-name>
+		<ejb-ref-type>Entity</ejb-ref-type>
+		<local-home>todobeans.PersonLocalHome</local-home>
+		<local>todobeans.PersonLocal</local>
+		<ejb-link>TodoProject.jar#Person</ejb-link>
+	</ejb-local-ref>
+	<ejb-local-ref id="EJBLocalRef_1270716318376">
+		<ejb-ref-name>ejb/CategoryRef</ejb-ref-name>
+		<ejb-ref-type>Entity</ejb-ref-type>
+		<local-home>todobeans.CategoryLocalHome</local-home>
+		<local>todobeans.CategoryLocal</local>
+		<ejb-link>TodoProject.jar#Category</ejb-link>
+	</ejb-local-ref>
+</web-app>

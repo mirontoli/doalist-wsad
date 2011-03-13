@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmlns:common="common.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <ejbRefBindings xmi:id="EjbRefBinding_1270070269875" jndiName="ejb/todobeans/TodoLocalHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1270070269875"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1270716318375" jndiName="ejb/todobeans/PersonLocalHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1270716318375"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1270716318376" jndiName="ejb/todobeans/CategoryLocalHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1270716318376"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>
