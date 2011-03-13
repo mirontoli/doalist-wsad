@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSphere-memento-map
+   CONFIG_MEMENTO_MAP_FILE_KEY_ID="WebSphere V5.1 Configuration Memento Map File"
+   CONFIG_NAME_KEY_ID="localServer" server-type="14">
+   <memento-map>
+      <memento-map-entry key="TodoProject.jar" value="com.ibm.etools.server.j2ee.ejb20:TodoProject"/>
+      <memento-map-entry key="TodoProjectEAR" value="com.ibm.etools.server.j2ee.ear13:TodoProjectEAR"/>
+      <memento-map-entry key="TestTodoProject_JUnitEE.war" value="com.ibm.etools.webtools.server:TestTodoProject_JUnitEE"/>
+      <memento-map-entry key="TodoWeb.war" value="com.ibm.etools.webtools.server:TodoWeb"/>
+   </memento-map>
+</webSphere-memento-map>
