@@ -7,7 +7,7 @@
     <title><%= pageTitle %></title>
 
     <!--jquery-->
-    <script src="js/lib/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <!-- our script which uses jquery library -->
     <script src="js/script.js" type="text/javascript"></script>
     <!-- our style sheet -->
