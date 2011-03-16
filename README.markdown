@@ -1,0 +1,1 @@
+This is a simple *todo list*. A student project at the [Department of Informatics in Lund](http://www.ics.lu.se). The project was developed in WebSphere Studio Application Developer 5 Academic Alliance. 
